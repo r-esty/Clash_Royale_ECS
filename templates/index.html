@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale Random Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #e0e0eb;
+        }
+
+        .glass-panel {
+            background: rgba(45, 45, 60, 0.4);
+            backdrop-filter: blur(10px) saturate(180%);
+            -webkit-backdrop-filter: blur(10px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 1rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 2.5rem;
+        }
+
+        .btn-glass {
+            background: rgba(100, 100, 150, 0.6);
+            backdrop-filter: blur(5px) saturate(150%);
+            -webkit-backdrop-filter: blur(5px) saturate(150%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 0.5rem;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .btn-glass:hover {
+            background: rgba(120, 120, 180, 0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .btn-glass:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="glass-panel w-full max-w-lg text-center mx-auto">
+        <h1 class="text-3xl font-bold mb-6 text-indigo-300">Clash Royale Random Deck</h1>
+        <p class="text-base mb-8 text-gray-300">Generate a 8 card deck for your next battle</p>
+        
+        <button id="generateButton" 
+                class="btn-glass text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
+            Get My Deck!
+        </button>
+
+        <div id="loadingIndicator" class="mt-8 text-indigo-300 text-base hidden animate-pulse">Loading cards...</div>
+        <div id="errorDisplay" class="mt-8 text-red-400 text-base hidden"></div>
+
+        <div id="cardsDisplay" class="mt-8 bg-gray-900 bg-opacity-30 p-6 rounded-lg border border-gray-700 backdrop-filter backdrop-blur-sm">
+            <h2 class="text-xl font-semibold mb-4 text-indigo-200">Your Generated Deck:</h2>
+            <ul id="cardList" class="list-disc list-inside text-left mx-auto max-w-xs space-y-2 text-gray-200">
+                <li class="opacity-80 text-gray-400">Click 'Get My Deck!' to begin.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

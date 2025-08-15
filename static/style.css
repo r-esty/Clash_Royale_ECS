@@ -1,0 +1,154 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #e0e0eb;
+}
+
+.glass-panel {
+    background: rgba(45, 45, 60, 0.4);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 2.5rem;
+}
+
+.btn-glass {
+    background: rgba(100, 100, 150, 0.6);
+    backdrop-filter: blur(5px) saturate(150%);
+    -webkit-backdrop-filter: blur(5px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-glass:hover {
+    background: rgba(120, 120, 180, 0.7);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.btn-glass:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.btn-custom {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.15),
+                0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+.btn-custom:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                0 1px 2px -1px rgba(0, 0, 0, 0.04);
+}
+
+.card-frame {
+    background: rgba(60, 60, 80, 0.7);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-frame:hover {
+    transform: translateY(-3px);
+}
+
+.card-content {
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.common-border { border: 2px solid #DCDCDC; }
+.rare-border { border: 2px solid #ffa500; }
+.epic-border { border: 2px solid #9c27b0; }
+
+.champion-border {
+    border: 3px solid #FF8C00;
+    box-shadow:
+        0 0 10px 4px rgba(255, 140, 0, 0.8),
+        0 0 20px 8px rgba(255, 165, 0, 0.6),
+        0 0 30px 12px rgba(255, 200, 0, 0.4);
+}
+.champion-border:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 12px 5px rgba(255, 140, 0, 0.9),
+        0 0 25px 10px rgba(255, 165, 0, 0.7),
+        0 0 35px 15px rgba(255, 200, 0, 0.5);
+}
+
+.legendary-border {
+    border: 3px solid #FF69B4;
+    animation: legendaryGlow 3s infinite alternate;
+}
+
+@keyframes legendaryGlow {
+    0% {
+        border-color: #FF69B4;
+        box-shadow:
+            0 0 10px 4px rgba(255, 105, 180, 0.8),
+            0 0 20px 8px rgba(255, 0, 255, 0.6),
+            0 0 30px 12px rgba(255, 0, 255, 0.4);
+    }
+    50% {
+        border-color: #32CD32;
+        box-shadow:
+            0 0 10px 4px rgba(50, 205, 50, 0.8),
+            0 0 20px 8px rgba(0, 255, 0, 0.6),
+            0 0 30px 12px rgba(0, 255, 0, 0.4);
+    }
+    100% {
+        border-color: #FF69B4;
+        box-shadow:
+            0 0 10px 4px rgba(255, 105, 180, 0.8),
+            0 0 20px 8px rgba(255, 0, 255, 0.6),
+            0 0 30px 12px rgba(255, 0, 255, 0.4);
+    }
+}
+
+#cardList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+#cardsDisplay.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+#cardsDisplay {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
