@@ -4,7 +4,6 @@ env/
 __pycache__/
 *.pyc
 *.pyo
-.dockerignore
 .terraform/
 .terraform.lock.hcl
 *.tfstate
@@ -15,4 +14,3 @@ __pycache__/
  
  clashflask.py
  clashflaskapi.py
- 
