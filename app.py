@@ -105,6 +105,6 @@ def get_random_cards():
     except Exception as e:
         print(f"An unknown server error occurred: {e}")
         return jsonify({"error": f"An unknown server error occurred: {e}."}), 500
-#ndj
+#ndjd
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True) 
