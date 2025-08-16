@@ -15,30 +15,31 @@ The application runs in a Docker container hosted on ECS Fargate. Infrastructure
 
 ### Running Locally
 
-1.Clone the repository:
-```bash
-git clone https://github.com/r-esty/Clash_Royale_ECS.git
-cd Clash_ECS
-```
-2.Set up your environment:
-```bash
-python3 -m venv .venv
-source .venv/bin/activate  # On Windows, use .venv\Scripts\activate
-```
-3.Install dependencies
-```bash
-pip install -r requirements.txt
-```
-4.Add your API key:
-Create a file called .env in the project's root directory and add the following line, replacing YOUR_API_KEY_HERE with your actual key
-```
-CLASH_ROYALE_API_KEY="YOUR_API_KEY_HERE"
-```
-5.Run the application
-```bash
-python app.py
-```
-6.Visit http://localhost:5000
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/r-esty/Clash_Royale_ECS.git](https://github.com/YOUR_USERNAME/Clash_Royale_ECS.git)
+    cd Clash_Royale_ECS
+    ```
+
+2.  **Set up your environment:**
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate  # On Windows, use .venv\Scripts\activate
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Run the application with your API key:**
+    ```bash
+    export CLASH_ROYALE_API_KEY="your-api-key" && python app.py
+    ```
+    Replace `"your-api-key"` with your actual key.
+
+5.  **Visit the application:**
+    Visit `http://localhost:5000` in your web browser.
 
 Running with Docker
 ```bash
