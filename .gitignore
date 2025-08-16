@@ -11,6 +11,6 @@ __pycache__/
 .terraform.tfvars
 .terraform.tfvars.json
 .DS_Store
- 
+ terraform.tfvars
  clashflask.py
  clashflaskapi.py
