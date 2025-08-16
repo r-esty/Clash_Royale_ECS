@@ -63,6 +63,9 @@ docker run -p 5000:5000 -e CLASH_ROYALE_API_KEY="your-api-key" clash-royale-deck
 - Updates ECS service for automatic deployment
 - Zero-downtime rolling updates
 
+Live at:
+https://tm.romeoesty.com
+
 
 
 
