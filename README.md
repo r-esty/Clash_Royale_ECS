@@ -24,7 +24,7 @@ The application runs in a Docker container hosted on ECS Fargate. Infrastructure
 2.  **Set up your environment:**
     ```bash
     python3 -m venv .venv
-    source .venv/bin/activate  # On Windows, use .venv\Scripts\activate
+    source .venv/bin/activate  
     ```
 
 3.  **Install dependencies:**
