@@ -40,7 +40,7 @@ python app.py
 ```
 6.Visit http://localhost:5000
 
-###Running with Docker
+Running with Docker
 ```bash
 docker build -t clash-royale-deck .
 docker run -p 5000:5000 -e CLASH_ROYALE_API_KEY="your-api-key" clash-royale-deck
