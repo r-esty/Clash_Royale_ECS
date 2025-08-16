@@ -45,6 +45,21 @@ python app.py
 docker build -t clash-royale-deck .
 docker run -p 5000:5000 -e CLASH_ROYALE_API_KEY="your-api-key" clash-royale-deck
 ```
+### Terraform
+- **ECS Fargate** for serverless container hosting
+- **Application Load Balancer** for HTTPS traffic distribution  
+- **VPC** with public/private subnets and NAT gateways
+- **Route 53** for DNS management (tm.romeoesty.com)
+- **ACM** certificate for SSL/TLS
+- **Security Groups** restricting traffic between components
+- **Secrets Manager** for API key storage
+- **ECR** for Docker image repository
+
+### CI/CD (GitHub Actions)
+- Builds Docker image on push to main
+- Pushes image to Amazon ECR
+- Updates ECS service for automatic deployment
+- Zero-downtime rolling updates
 
 
 
