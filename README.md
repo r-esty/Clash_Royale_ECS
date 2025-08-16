@@ -1,6 +1,4 @@
-# AWS Clash Royale Deck Generator to AWS ECS with Terraform and Github Actions
-
-This project deploys a containerised web based application to AWS using Terraform and Github Actions.The web based applciwyion creates the user random decks each time they press "Get My Deck!" each random deck will contain a mixture of 8 cards following the clash royale standsrd gamemode rule etc you cant have more than one champions in a deck.I used clash royale api which to give me up to date information so that the decks are as accurate to the current version of yhr game
+AWS Clash Royale Deck Generator to AWS ECS with Terraform and GitHub Actions
 
 ## Overview 
 
