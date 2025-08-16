@@ -18,7 +18,7 @@ The application runs in a Docker container hosted on ECS Fargate. Infrastructure
 1.Clone the repository:
 ```bash
 git clone https://github.com/r-esty/Clash_Royale_ECS.git
-cd Clash_Royale_ECS
+cd Clash_ECS
 ```
 2.Set up your environment:
 ```bash
