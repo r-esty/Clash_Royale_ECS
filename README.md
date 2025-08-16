@@ -32,7 +32,7 @@ The application runs in a Docker container hosted on ECS Fargate. Infrastructure
     pip install -r requirements.txt
     ```
 
-4.  **Run the application with your API key:**
+4.  **Run the application with your API key which you can get on https://developer.clashroyale.com/#/login :**
     ```bash
     export CLASH_ROYALE_API_KEY="your-api-key" && python app.py
     ```
