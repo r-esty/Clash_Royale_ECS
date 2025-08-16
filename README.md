@@ -15,9 +15,9 @@ The application runs in a Docker container hosted on ECS Fargate. Infrastructure
 
 ### Running Locally
 
-1. Clone the repository:
+1.Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/Clash_Royale_ECS.git
+git clone https://github.com/r-esty/Clash_Royale_ECS.git
 cd Clash_Royale_ECS
 ```
 2.Set up your environment:
@@ -25,7 +25,7 @@ cd Clash_Royale_ECS
 python3 -m venv .venv
 source .venv/bin/activate  # On Windows, use .venv\Scripts\activate
 ```
-3. Install dependencies
+3.Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
