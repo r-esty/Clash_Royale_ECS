@@ -1,4 +1,4 @@
-AWS Clash Royale Deck Generator to AWS ECS with Terraform and GitHub Actions
+## AWS Clash Royale Deck Generator to AWS ECS with Terraform and GitHub Actions
 
 ## Overview 
 
