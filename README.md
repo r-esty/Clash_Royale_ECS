@@ -33,15 +33,15 @@ The web application generates a random 8-card deck each time the user presses "G
   ```
 4.Set your API key
 ```bash
-export CLASH_ROYALE_API_KEY="your-api-key-here"
+   export CLASH_ROYALE_API_KEY="your-api-key-here"
 ```
-5.Run appp
+5.Run app
 ```bash
-python3 app.py
+   python3 app.py
 ```
 6. Open browser
 ```bash
-http://localhost:5000
+   http://localhost:5000
 ```
    
 
