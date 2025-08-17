@@ -60,7 +60,7 @@ The web application generates a random 8-card deck each time the user presses "G
 ## Key Components
 
 ### Docker
-A Dockerfile in the directory that defines how the application is built into a container.   
+- A  `Dockerfile` in the directory that defines how the application is built into a container.   
 
 ### Terraform
 - **ECS Fargate** for serverless container hosting
