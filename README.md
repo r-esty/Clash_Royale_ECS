@@ -43,17 +43,17 @@ The web application generates a random 8-card deck each time the user presses "G
    http://localhost:5000
    ```
 ### Running with Docker
-1.Build the Docker Image
+1. Build the Docker Image
    ```bash
-docker build -t clash-royale-deck .
+   docker build -t clash-royale-deck .
    ```
-2.Run the Docker Container
+2. Run the Docker Container
 ```bash
-docker run \
-  --name clash_royale_container \
-  -p 5000:5000 \
-  -e CLASH_ROYALE_API_KEY="your-api-key-here" \
-  clash-royale-deck
+    docker run \
+      --name clash_royale_container \
+      -p 5000:5000 \
+      -e CLASH_ROYALE_API_KEY="your-api-key-here" \
+      clash-royale-deck
 ```
 
 
