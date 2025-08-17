@@ -17,7 +17,7 @@ The web application generates a random 8-card deck each time the user presses "G
 
 ### Local Development Setup
 
-1. **Clone the repository**
+1. Clone the repository
    ```bash
    git clone https://github.com/r-esty/Clash_Royale_ECS.git
    cd Clash_Royale_ECS
@@ -27,22 +27,21 @@ The web application generates a random 8-card deck each time the user presses "G
    python3 -m venv .venv
    source .venv/bin/activate  
    ```
-3.Install dependencies
-```bash
+3. Install dependencies
+   ```bash
    pip install -r requirements.txt
-  ```
-4.Set your API key
-```bash
+   ```
+4. Set your API key
+   ```bash
    export CLASH_ROYALE_API_KEY="your-api-key-here"
-```
-5.Run app
-```bash
+5. Run app
+   ```bash
    python3 app.py
-```
+   ```
 6. Open browser
-```bash
+   ```bash
    http://localhost:5000
-```
+   ```
    
 
 
