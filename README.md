@@ -104,6 +104,10 @@ The web application generates a random 8-card deck each time the user presses "G
     ├── providers.tf
     └── variables.tf
 ```
+## Screnshots
+
+<img width="1919" height="1015" alt="image" src="https://github.com/user-attachments/assets/0453af62-2546-4e16-bada-1edcf91b164a" />
+
 
   
 Live at:
