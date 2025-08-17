@@ -108,6 +108,14 @@ The web application generates a random 8-card deck each time the user presses "G
 
 <img width="1919" height="1015" alt="image" src="https://github.com/user-attachments/assets/0453af62-2546-4e16-bada-1edcf91b164a" />
 
+<img width="1919" height="1016" alt="image" src="https://github.com/user-attachments/assets/74df7d49-dff8-4878-a880-2854247cb9c2" />
+
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/6a46c000-3419-417d-8474-2537d9682f37" />
+
+
+
+
+
 
   
 Live at:
