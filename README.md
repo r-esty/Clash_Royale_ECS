@@ -42,7 +42,7 @@ The web application generates a random 8-card deck each time the user presses "G
    ```bash
    http://localhost:5000
    ```
-###Running with Docker
+### Running with Docker
 1.Build the Docker Image
    ```bash
 docker build -t clash-royale-deck .
