@@ -78,6 +78,34 @@ The web application generates a random 8-card deck each time the user presses "G
 - Updates ECS service for automatic deployment
 - Zero-downtime rolling updates
 
+## Directory Structure
+
+   ```bash
+├── README.md
+├── app.py
+├── dockerfile
+├── requirements.txt
+├── static
+│   ├── script.js
+│   └── style.css
+├── templates
+│   └── index.html
+└── terraform
+    ├── modules
+    │   ├── acm/
+    │   ├── alb/
+    │   ├── ecr/
+    │   ├── ecs/
+    │   ├── iam/
+    │   ├── route53/
+    │   └── vpc/
+    ├── main.tf
+    ├── output.tf
+    ├── providers.tf
+    └── variables.tf
+```
+
+  
 Live at:
 https://tm.romeoesty.com
 
