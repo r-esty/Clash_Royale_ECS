@@ -19,7 +19,7 @@ The web application generates a random 8-card deck each time the user presses "G
 - Python 3.8 or higher
 - Docker (optional)
 - AWS account (for deployment)
-- Clash Royale API key from [RoyaleAPI](https://developer.clashroyale.com)
+- Clash Royale API key from [RoyaleAPI](https://developer.clashroyale.com) use 45.79.218.79 as allowed ip ranges
 
 ### Local Development Setup
 
