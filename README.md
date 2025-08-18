@@ -61,6 +61,10 @@ The web application generates a random 8-card deck each time the user presses "G
       -e CLASH_ROYALE_API_KEY="your-api-key-here" \
       clash-royale-deck
    ```
+3. Open browser
+    ```bash
+   http://localhost:5000/
+   ```
 
 
  
