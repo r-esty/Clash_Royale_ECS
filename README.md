@@ -7,7 +7,8 @@ The web application generates a random 8-card deck each time the user presses "G
 
 
 ### Architecture Diagram:
-<img width="1214" height="1025" alt="image" src="https://github.com/user-attachments/assets/81df01a1-1ae6-4e4c-8e28-bbadc619586e" />
+<img width="1257" height="1065" alt="image" src="https://github.com/user-attachments/assets/e98ab280-7bde-4a11-aab9-470d97df8e4e" />
+
 
 
 ## Getting Started
