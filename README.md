@@ -134,16 +134,6 @@ The web application generates a random 8-card deck each time the user presses "G
 
 
 
-  
-Live at:
-https://tm.romeoesty.com
-
-
-
-
-
-
-
 
 
 
