@@ -5,6 +5,10 @@
 The application runs in a Docker container hosted on Amazon ECS Fargate. The infrastructure is defined using Terraform and deployed through automated workflows in GitHub Actions. DNS is managed via Route 53, and HTTPS is enabled through ACM.
 The web application generates a random 8-card deck each time the user presses "Get My Deck!" Each deck follows standard Clash Royale gameplay rules, such as not allowing more than one Champion card. The application uses the official Clash Royale API to ensure all generated decks are accurate and up-to-date with the current version of the game.
 
+
+### Architecture Diagram:
+<img width="1194" height="1010" alt="image" src="https://github.com/user-attachments/assets/83b411fd-7e61-4c67-9cd4-70eac4f0e553" />
+
 ## Getting Started
 
 ### Prerequisites
