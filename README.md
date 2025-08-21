@@ -5,13 +5,21 @@
 The application runs in a Docker container hosted on Amazon ECS Fargate. The infrastructure is defined using Terraform and deployed through automated workflows in GitHub Actions. DNS is managed via Route 53, and HTTPS is enabled through ACM.
 The web application generates a random 8-card deck each time the user presses "Get My Deck!" Each deck follows standard Clash Royale gameplay rules, such as not allowing more than one Champion card. The application uses the official Clash Royale API to ensure all generated decks are accurate and up-to-date with the current version of the game.
 
+
+### Architecture Diagram:
+<img width="1292" height="989" alt="image" src="https://github.com/user-attachments/assets/137342fe-d17a-4fcd-982b-62a75b7b7e21" />
+
+
+
+
+
 ## Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
 - Docker (optional)
 - AWS account (for deployment)
-- Clash Royale API key from [RoyaleAPI](https://developer.clashroyale.com)
+- Clash Royale API key from [RoyaleAPI](https://developer.clashroyale.com) use 45.79.218.79 as allowed ip ranges
 
 ### Local Development Setup
 
@@ -52,6 +60,10 @@ The web application generates a random 8-card deck each time the user presses "G
       -p 5000:5000 \
       -e CLASH_ROYALE_API_KEY="your-api-key-here" \
       clash-royale-deck
+   ```
+3. Open browser
+    ```bash
+   http://localhost:5000/
    ```
 
 
@@ -106,20 +118,19 @@ The web application generates a random 8-card deck each time the user presses "G
 ```
 ## Screnshots
 
+### Domain Page
+
 <img width="1919" height="1015" alt="image" src="https://github.com/user-attachments/assets/0453af62-2546-4e16-bada-1edcf91b164a" />
 
 <img width="1919" height="1016" alt="image" src="https://github.com/user-attachments/assets/74df7d49-dff8-4878-a880-2854247cb9c2" />
 
+### SSL Certificate
+
 <img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/6a46c000-3419-417d-8474-2537d9682f37" />
 
+### GitHub Actions CI/CD Pipeline
 
-
-
-
-
-  
-Live at:
-https://tm.romeoesty.com
+<img width="1919" height="872" alt="image" src="https://github.com/user-attachments/assets/0bfd1c01-0ab5-402f-8ddb-d2f57e881f77" />
 
 
 
