@@ -6,4 +6,6 @@ terraform {
     dynamodb_table = "clash-royale-tf-locks"
     encrypt        = true
   }
-}
+} 
+
+#test plan 
