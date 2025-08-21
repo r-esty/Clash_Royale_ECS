@@ -17,7 +17,7 @@ module "ecr" {
 }
 
 resource "aws_secretsmanager_secret" "api_key" {
-  name = "${local.project_name}-api-key"
+  name = "${local.project_name}-api-key-v2"
 }
 
 resource "aws_secretsmanager_secret_version" "api_key" {
@@ -72,5 +72,4 @@ module "route53" {
   alb_dns_name = module.alb.alb_dns_name
   alb_zone_id  = module.alb.alb_zone_id
 }
-
-#test plan
+ #test plan
