@@ -18,6 +18,7 @@ module "ecr" {
 
 resource "aws_secretsmanager_secret" "api_key" {
   name = "${local.project_name}-api-key-v2"
+  recovery_window_in_days = 0 
 }
 
 resource "aws_secretsmanager_secret_version" "api_key" {
