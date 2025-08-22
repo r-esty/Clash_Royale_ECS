@@ -73,4 +73,3 @@ module "route53" {
   alb_dns_name = module.alb.alb_dns_name
   alb_zone_id  = module.alb.alb_zone_id
 }
- #testing plan workflow
